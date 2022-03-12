@@ -1,0 +1,16 @@
+// tailwind
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+// component
+@import './component/navbar/navbar';
+@import './component/input';
+
+// scroll
+.overflow::-webkit-scrollbar {
+  width: 8px;
+}
+.overflow::-webkit-scrollbar-thumb {
+  @apply rounded-full;
+}

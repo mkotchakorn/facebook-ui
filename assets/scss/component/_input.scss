@@ -1,0 +1,15 @@
+.form-control {
+  @apply bg-form rounded-full placeholder:text-gray-700/70 focus:outline-none focus:placeholder:text-gray-700/50 px-4;
+}
+
+.from-control-icon {
+  @apply relative;
+
+  .form-control {
+    @apply pl-8;
+  }
+
+  .icon {
+    @apply absolute top-1/2 -translate-y-1/2 left-[10px] text-gray-700/60;
+  }
+}

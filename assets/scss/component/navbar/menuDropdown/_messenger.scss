@@ -1,0 +1,34 @@
+.nav-menu-list-dropdown-messenger {
+  @screen xl {
+    width: 360px;
+
+    .overflow {
+      @screen xl {
+        @apply pb-2 pl-3 overflow-y-auto overflow-x-hidden text-dark;
+        height: calc(100vh - 117px);
+
+        &:hover {
+          &::-webkit-scrollbar-thumb {
+            @apply bg-scroll;
+          }
+        }
+      }
+    }
+
+    .chat-list {
+      @screen xl {
+        @apply relative hover:bg-gray-200 rounded-lg cursor-pointer;
+
+        .more {
+          @apply absolute top-1/2 -translate-y-1/2 right-5 w-9 h-9 bg-white rounded-full items-center justify-center border border-line;
+        }
+
+        &:hover {
+          .more {
+            @apply flex;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,48 @@
+.nav-menu-list-dropdown-menu {
+  .overflow {
+    @screen xl {
+      @apply pb-5 pl-3 overflow-y-auto overflow-x-hidden;
+      height: calc(100vh - 124px);
+
+      &:hover {
+        &::-webkit-scrollbar-thumb {
+          @apply bg-scroll;
+        }
+      }
+    }
+  }
+
+  .card {
+    @screen xl {
+      @apply -mx-1;
+
+      &-lf {
+        @apply px-2;
+
+        &-wrap {
+          @apply p-4 bg-white shadow rounded-lg;
+          width: 360px;
+
+          .search {
+            .form-control {
+              @apply w-full h-9;
+            }
+          }
+        }
+      }
+
+      &-rt {
+        @apply px-2;
+
+        &-wrap {
+          @apply p-4 bg-white shadow rounded-lg;
+          width: 200px;
+        }
+      }
+    }
+
+    .line-cut {
+      @apply before:absolute before:inset-x-2 before:-bottom-2 before:w-auto before:h-[1px] before:bg-line;
+    }
+  }
+}

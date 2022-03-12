@@ -1,0 +1,9 @@
+.nav {
+  &-search {
+    @apply h-nav fixed left-16 z-[53] flex items-center;
+
+    &-panel {
+      @apply fixed top-0 left-0 bg-white rounded-lg w-80 shadow-xl pt-2 px-4;
+    }
+  }
+}

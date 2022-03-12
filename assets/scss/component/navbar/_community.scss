@@ -1,0 +1,75 @@
+.nav {
+  &-community {
+    @apply flex items-center justify-center z-50 shadow-[0_0_5px_0_rgba(0,0,0,0.2)];
+
+    @screen max-xs {
+      @apply overflow-x-auto;
+    }
+
+    @screen xl {
+      @apply fixed h-nav w-full top-0 pl-110px pr-110px bg-white;
+    }
+
+    &-link {
+      @apply relative items-center justify-center flex-grow ml-2 first:ml-0 h-10
+      before:absolute before:left-0 before:bottom-0 before:w-full before:h-[3px]
+      after:absolute after:inset-0 after:my-3px after:rounded-lg after:-z-10 first:pointer-events-auto pointer-events-none;
+      min-width: 50px;
+      max-width: 111.6px;
+
+      @screen max-xl {
+        &.home {
+          @apply order-first;
+        }
+        &.friend {
+          @apply order-1;
+        }
+        &.watch {
+          @apply order-3;
+        }
+        &.marketplace {
+          @apply order-2;
+        }
+        &.notifications {
+          @apply order-4;
+        }
+        &.menu {
+          @apply order-last;
+        }
+      }
+
+      @screen xl {
+        @apply h-nav pointer-events-auto;
+      }
+
+      svg {
+        @apply text-transparent stroke-32 stroke-gray-700;
+      }
+
+      &.nuxt-link-active {
+        @apply before:bg-primary hover:after:bg-white;
+
+        svg {
+          @apply text-primary stroke-transparent;
+        }
+      }
+
+      &:hover {
+        @screen xl {
+          @apply after:bg-gray-200;
+          .tooltip {
+            @apply block;
+          }
+        }
+      }
+
+      .tooltip {
+        @apply -bottom-9;
+      }
+
+      .notification-badge {
+        @apply ml-6 mb-6;
+      }
+    }
+  }
+}

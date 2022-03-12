@@ -1,0 +1,265 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.nav-community {
+  @apply flex items-center justify-center z-50 shadow-[0_0_5px_0_rgba(0,0,0,0.2)];
+}
+@screen max-xs {
+  .nav-community {
+    @apply overflow-x-auto;
+  }
+}
+@screen xl {
+  .nav-community {
+    @apply fixed h-nav w-full top-0 pl-110px pr-110px bg-white;
+  }
+}
+.nav-community-link {
+  @apply relative items-center justify-center flex-grow ml-2 first:ml-0 h-10
+      before:absolute before:left-0 before:bottom-0 before:w-full before:h-[3px]
+      after:absolute after:inset-0 after:my-3px after:rounded-lg after:-z-10 first:pointer-events-auto pointer-events-none;
+  min-width: 50px;
+  max-width: 111.6px;
+}
+@screen max-xl {
+  .nav-community-link.home {
+    @apply order-first;
+  }
+  .nav-community-link.friend {
+    @apply order-1;
+  }
+  .nav-community-link.watch {
+    @apply order-3;
+  }
+  .nav-community-link.marketplace {
+    @apply order-2;
+  }
+  .nav-community-link.notifications {
+    @apply order-4;
+  }
+  .nav-community-link.menu {
+    @apply order-last;
+  }
+}
+@screen xl {
+  .nav-community-link {
+    @apply h-nav pointer-events-auto;
+  }
+}
+.nav-community-link svg {
+  @apply text-transparent stroke-32 stroke-gray-700;
+}
+.nav-community-link.nuxt-link-active {
+  @apply before:bg-primary hover:after:bg-white;
+}
+.nav-community-link.nuxt-link-active svg {
+  @apply text-primary stroke-transparent;
+}
+@screen xl {
+  .nav-community-link:hover {
+    @apply after:bg-gray-200;
+  }
+  .nav-community-link:hover .tooltip {
+    @apply block;
+  }
+}
+.nav-community-link .tooltip {
+  @apply -bottom-9;
+}
+.nav-community-link .notification-badge {
+  @apply ml-6 mb-6;
+}
+
+.nav-menu-list-dropdown-account {
+  @apply text-dark;
+}
+@screen xl {
+  .nav-menu-list-dropdown-account {
+    width: 360px;
+  }
+}
+
+@screen xl {
+  .nav-menu-list-dropdown-menu .overflow {
+    @apply pb-5 pl-3 overflow-y-auto overflow-x-hidden;
+    height: calc(100vh - 124px);
+  }
+  .nav-menu-list-dropdown-menu .overflow:hover::-webkit-scrollbar-thumb {
+    @apply bg-scroll;
+  }
+}
+@screen xl {
+  .nav-menu-list-dropdown-menu .card {
+    @apply -mx-1;
+  }
+  .nav-menu-list-dropdown-menu .card-lf {
+    @apply px-2;
+  }
+  .nav-menu-list-dropdown-menu .card-lf-wrap {
+    @apply p-4 bg-white shadow rounded-lg;
+    width: 360px;
+  }
+  .nav-menu-list-dropdown-menu .card-lf-wrap .search .form-control {
+    @apply w-full h-9;
+  }
+  .nav-menu-list-dropdown-menu .card-rt {
+    @apply px-2;
+  }
+  .nav-menu-list-dropdown-menu .card-rt-wrap {
+    @apply p-4 bg-white shadow rounded-lg;
+    width: 200px;
+  }
+}
+.nav-menu-list-dropdown-menu .card .line-cut {
+  @apply before:absolute before:inset-x-2 before:-bottom-2 before:w-auto before:h-[1px] before:bg-line;
+}
+
+@screen xl {
+  .nav-menu-list-dropdown-messenger {
+    width: 360px;
+  }
+  @screen xl {
+    .nav-menu-list-dropdown-messenger .overflow {
+      @apply pb-2 pl-3 overflow-y-auto overflow-x-hidden text-dark;
+      height: calc(100vh - 117px);
+    }
+    .nav-menu-list-dropdown-messenger .overflow:hover::-webkit-scrollbar-thumb {
+      @apply bg-scroll;
+    }
+  }
+  @screen xl {
+    .nav-menu-list-dropdown-messenger .chat-list {
+      @apply relative hover:bg-gray-200 rounded-lg cursor-pointer;
+    }
+    .nav-menu-list-dropdown-messenger .chat-list .more {
+      @apply absolute top-1/2 -translate-y-1/2 right-5 w-9 h-9 bg-white rounded-full items-center justify-center border border-line;
+    }
+    .nav-menu-list-dropdown-messenger .chat-list:hover .more {
+      @apply flex;
+    }
+  }
+}
+
+@screen xl {
+  .nav-menu-list-dropdown-notifications {
+    width: 360px;
+  }
+  @screen xl {
+    .nav-menu-list-dropdown-notifications .overflow {
+      @apply pb-2 pl-3 overflow-y-auto overflow-x-hidden text-dark;
+      height: calc(100vh - 73px);
+    }
+    .nav-menu-list-dropdown-notifications .overflow:hover::-webkit-scrollbar-thumb {
+      @apply bg-scroll;
+    }
+  }
+  @screen xl {
+    .nav-menu-list-dropdown-notifications .notification-list {
+      @apply relative hover:bg-gray-200 rounded-lg cursor-pointer;
+    }
+    .nav-menu-list-dropdown-notifications .notification-list .more {
+      @apply absolute top-1/2 -translate-y-1/2 right-7 w-9 h-9 bg-white rounded-full items-center justify-center border border-line;
+    }
+    .nav-menu-list-dropdown-notifications .notification-list:hover .more {
+      @apply flex;
+    }
+  }
+}
+
+.nav-menu {
+  @apply fixed top-0 right-0 h-nav mr-4 flex items-center text-dark;
+  z-index: 52;
+}
+.nav-menu-profile {
+  @apply relative flex items-center px-3
+              before:absolute before:-inset-y-1 before:left-2 before:right-0 before:rounded-full before:-z-10;
+}
+.nav-menu-profile span {
+  @apply font-semibold;
+}
+.nav-menu-profile:hover {
+  @apply before:bg-gray-200;
+}
+.nav-menu-profile.nuxt-link-active {
+  @apply before:bg-blue-100;
+}
+.nav-menu-profile.nuxt-link-active span {
+  @apply text-accent;
+}
+.nav-menu-list {
+  @apply flex items-center h-nav;
+}
+.nav-menu-list-item {
+  @apply relative w-10 h-10 flex items-center justify-center bg-gray-400 ml-2 rounded-full last-of-type:pb-2;
+}
+.nav-menu-list-item svg {
+  @apply text-dark w-5 h-5;
+}
+.nav-menu-list-item.active {
+  @apply bg-blue-100;
+}
+.nav-menu-list-item.active svg {
+  @apply text-accent;
+}
+.nav-menu-list-item:hover {
+  @apply bg-gray-500;
+}
+.nav-menu-list-item:hover .tooltip {
+  @apply block z-10;
+}
+.nav-menu-list-item .tooltip {
+  @apply -bottom-11;
+}
+.nav-menu-list-item .notification-badge {
+  @apply -top-6px -right-6px;
+}
+.nav-menu-list-dropdown {
+  @apply fixed top-nav right-4;
+}
+.nav-menu-list-dropdown-wrap {
+  @apply bg-gray-300 px-1 rounded-lg shadow-lg -mt-1 overflow-hidden;
+  max-height: calc(100vh - 56px - 16px);
+}
+
+.nav-search {
+  @apply h-nav fixed left-16 z-[53] flex items-center;
+}
+.nav-search-panel {
+  @apply fixed top-0 left-0 bg-white rounded-lg w-80 shadow-xl pt-2 px-4;
+}
+
+.nav-logo {
+  @apply hidden xl:flex fixed top-0 left-0 h-nav items-center ml-4;
+  z-index: 51;
+}
+.nav .tooltip {
+  @apply absolute text-xs bg-black/80 text-white rounded-lg py-2 px-4;
+}
+.nav .notification-badge {
+  @apply absolute w-19px h-19px hidden xl:flex items-center justify-center rounded-full bg-danger text-white text-xs;
+}
+.nav-mobile-tab {
+  @apply h-10 items-center bg-blue-700 px-4;
+}
+
+.form-control {
+  @apply bg-form rounded-full placeholder:text-gray-700/70 focus:outline-none focus:placeholder:text-gray-700/50 px-4;
+}
+
+.from-control-icon {
+  @apply relative;
+}
+.from-control-icon .form-control {
+  @apply pl-8;
+}
+.from-control-icon .icon {
+  @apply absolute top-1/2 -translate-y-1/2 left-[10px] text-gray-700/60;
+}
+
+.overflow::-webkit-scrollbar {
+  width: 8px;
+}
+
+.overflow::-webkit-scrollbar-thumb {
+  @apply rounded-full;
+}

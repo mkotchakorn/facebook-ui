@@ -1,0 +1,77 @@
+@import './menuDropdown/account';
+@import './menuDropdown/menu';
+@import './menuDropdown/messenger';
+@import './menuDropdown/notification';
+
+.nav {
+  &-menu {
+    @apply fixed top-0 right-0 h-nav mr-4 flex items-center text-dark;
+    z-index: 52;
+
+    &-profile {
+      @apply relative flex items-center px-3
+              before:absolute before:-inset-y-1 before:left-2 before:right-0 before:rounded-full before:-z-10;
+
+      span {
+        @apply font-semibold;
+      }
+
+      &:hover {
+        @apply before:bg-gray-200;
+      }
+
+      &.nuxt-link-active {
+        @apply before:bg-blue-100;
+
+        span {
+          @apply text-accent;
+        }
+      }
+    }
+
+    &-list {
+      @apply flex items-center h-nav;
+
+      &-item {
+        @apply relative w-10 h-10 flex items-center justify-center bg-gray-400 ml-2 rounded-full last-of-type:pb-2;
+
+        svg {
+          @apply text-dark w-5 h-5;
+        }
+
+        &.active {
+          @apply bg-blue-100;
+
+          svg {
+            @apply text-accent;
+          }
+        }
+
+        &:hover {
+          @apply bg-gray-500;
+
+          .tooltip {
+            @apply block z-10;
+          }
+        }
+
+        .tooltip {
+          @apply -bottom-11;
+        }
+
+        .notification-badge {
+          @apply -top-6px -right-6px;
+        }
+      }
+
+      &-dropdown {
+        @apply fixed top-nav right-4;
+
+        &-wrap {
+          @apply bg-gray-300 px-1 rounded-lg shadow-lg -mt-1 overflow-hidden;
+          max-height: calc(100vh - 56px - 16px);
+        }
+      }
+    }
+  }
+}
