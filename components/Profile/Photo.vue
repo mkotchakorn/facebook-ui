@@ -9,7 +9,7 @@
       </div>
       <div class="photo-list">
         <div v-for="i in 9" :key="i" class="photo-list-profile">
-          <img src="http://fakeimg.pl/480x480" />
+          <img src="https://fakeimg.pl/480x480" />
         </div>
       </div>
     </div>

@@ -9,7 +9,7 @@
       </div>
       <div class="event-list">
           <div class="w-[166px] h-[249px] border border-line rounded-lg flex flex-col items-center justify-center p-4">
-              <img src='http://fakeimg.pl/48x48' class="rounded-full" />
+              <img src='https://fakeimg.pl/48x48' class="rounded-full" />
               <div class="m-2 text-center">
                   <p class="text-[15px] font-semibold leading-snug truncate truncate-3">Culpa consectetur irure tempor pariatur ut.</p>
                   <p class="text-[13px] text-gray-700">2020</p>

@@ -8,7 +8,7 @@
       </div>
       <div class="bio-list max-xl:-mt-1">
           <div v-for="(i, indexData) in 3" :key="indexData" class="my-2 xl:my-4 flex items-center">
-              <img src='http://fakeimg.pl/16x16' class="rounded-full" />
+              <img src='https://fakeimg.pl/16x16' class="rounded-full" />
               <p class="text-[15px] ml-3">Est occaecat commodo qui magna sn.</p>
           </div>
           <div class="btn btn-edit-public xl:!hidden">Edit Public Detail</div>

@@ -21,6 +21,10 @@
 
       .btn-post {
         @apply h-9 w-full flex items-center justify-center rounded xl:rounded-lg bg-primary text-[15px] font-semibold text-white hover:bg-blue-900;
+
+        &:disabled {
+          @apply xl:bg-gray-400 xl:text-[#BCC0C4] hover:cursor-not-allowed;
+        }
       }
     }
   }

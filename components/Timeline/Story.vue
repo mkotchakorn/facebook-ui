@@ -7,7 +7,7 @@
     <div class="relative">
       <div class="time-line-story-list">
         <div class="my-story bg-backdrop">
-          <img src="http://fakeimg.pl/111x198" class="w-full shadow rounded-lg" />
+          <img src="https://fakeimg.pl/111x198" class="w-full shadow rounded-lg" />
           <div class="create-story flex justify-center">
             <div class="plus">+</div>
             <div class="hidden xl:block text-[13px] font-semibold mt-auto pb-2 leading-3">Create story</div>
@@ -19,9 +19,9 @@
         </div>
         <div v-for="i in 10" :key="i" class="friend-story bg-backdrop">
           <div class="profile">
-            <img src="http://fakeimg.pl/32x32" class="rounded-full border-4 border-primary" />
+            <img src="https://fakeimg.pl/32x32" class="rounded-full border-4 border-primary" />
           </div>
-          <img src="http://fakeimg.pl/111x198" class="w-full shadow rounded-lg" />
+          <img src="https://fakeimg.pl/111x198" class="w-full shadow rounded-lg" />
           <div class="caption font-semibold">Title</div>
         </div>
 

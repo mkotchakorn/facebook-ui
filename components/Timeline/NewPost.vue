@@ -5,17 +5,17 @@
         <p class="hidden text-xl font-bold">Posts</p>
       </div>
       <div class="card-body">
-        <img src="http://fakeimg.pl/40x40" class="rounded-full mr-2 xl:mr-3" />
-        <input type="text" class="form-control !bg-transparent xl:!bg-gray-100 xl:hover:!bg-gray-400" placeholder="What's on your mind?" @click="toggleNewPost" />
+        <img src="https://fakeimg.pl/40x40" class="rounded-full mr-2 xl:mr-3" />
+        <input type="text" class="form-control !bg-transparent xl:!bg-gray-100 xl:hover:!bg-gray-400" :disabled="createPost" placeholder="What's on your mind?" @click="toggleNewPost" />
         <div class="flex flex-col ml-2 xl:hidden">
-          <img src="http://fakeimg.pl/20x20" class="rounded-full mx-auto" />
+          <img src="https://fakeimg.pl/20x20" class="rounded-full mx-auto" />
           <span class="text-[10px] text-gray-700">Photo</span>
         </div>
       </div>
       <div class="card-footer hidden xl:block">
         <div class="menu-list flex items-center">
           <div v-for="(i, index) in 3" :key="index" class="menu-item flex items-center justify-center flex-grow p-2 hover:bg-gray-200 rounded-lg cursor-pointer">
-            <img src="http://fakeimg.pl/24x24" class="rounded-full mr-2" />
+            <img src="https://fakeimg.pl/24x24" class="rounded-full mr-2" />
             <p class="text-[15px] font-semibold text-gray-700">Menu</p>
           </div>
         </div>
@@ -43,7 +43,10 @@ export default {
     toggleNewPost() {
       this.createPost = !this.createPost
     },
-    createNewPost() {
+    createNewPost(val) {
+      const posts = this.$getState('posts');
+      const data = [...posts, {name: 'John Doe', date: new Date(), message: val}]
+      this.$setState('posts', data);
       this.createPost = false
     },
   },

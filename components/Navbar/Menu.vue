@@ -2,7 +2,7 @@
   <div class="nav-menu">
     <nuxt-link to="/profile" class="nav-menu-profile">
       <div class="profile mr-6px">
-        <img src="http://fakeimg.pl/28x28" alt="profile" class="rounded-full" />
+        <img src="https://fakeimg.pl/28x28" alt="profile" class="rounded-full" />
       </div>
       <span class="text-[15px]">John</span>
     </nuxt-link>

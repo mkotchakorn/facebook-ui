@@ -3,7 +3,7 @@
     <div class="overflow">
       <div class="flex items-end justify-between pb-2">
         <p class="px-4 pt-3 -mx-4 capitalize text-2xl font-bold">{{ title }}</p>
-        <img :key="indexIcon" src="http://fakeimg.pl/20x20" class="rounded-full mb-1 mr-4" />
+        <img :key="indexIcon" src="https://fakeimg.pl/20x20" class="rounded-full mb-1 mr-4" />
       </div>
       <div class="flex items-center">
         <div class="rounded-full bg-blue-100 text-[15px] font-semibold h-9 px-3 flex items-center justify-center">All</div>
@@ -17,7 +17,7 @@
 
         <div v-for="(i, indexNotification) in 20" :key="indexNotification" class="notification-list flex items-center -mx-2 p-2 relative">
           <div class="relative">
-            <img src="http://fakeimg.pl/56x56" class="rounded-full mr-3" />
+            <img src="https://fakeimg.pl/56x56" class="rounded-full mr-3" />
             <div class="absolute right-2 -bottom-1 bg-gray-500 w-7 h-7 rounded-full"></div>
           </div>
           <div class="-mt-1">

@@ -19,7 +19,7 @@
                 class="p-2 flex items-start -ml-2 -mr-2 rounded-lg hover:bg-gray-200 cursor-pointer"
                 :class="{ 'relative line-cut mb-4': indexSocial >= i }"
               >
-                <img src="http://fakeimg.pl/36x36" class="rounded-lg mr-3" />
+                <img src="https://fakeimg.pl/36x36" class="rounded-lg mr-3" />
                 <div class="-mt-1">
                   <div class="text-[15px] font-medium">Title</div>
                   <div class="text-gray-700 text-[13px] leading-none">Aliqua commodo magna id pariatur consectetur cupidatat.</div>
@@ -34,7 +34,7 @@
                 :key="indexEntertainment"
                 class="p-2 flex items-start -ml-2 -mr-2 rounded-lg hover:bg-gray-200 cursor-pointer"
               >
-                <img src="http://fakeimg.pl/36x36" class="rounded-lg mr-3" />
+                <img src="https://fakeimg.pl/36x36" class="rounded-lg mr-3" />
                 <div class="-mt-1">
                   <div class="text-[15px] font-medium">Title</div>
                   <div class="text-gray-700 text-[13px] leading-none">Aliqua commodo magna id pariatur consectetur cupidatat.</div>
@@ -49,7 +49,7 @@
                 :key="indexShopping"
                 class="p-2 flex items-start -ml-2 -mr-2 rounded-lg hover:bg-gray-200 cursor-pointer"
               >
-                <img src="http://fakeimg.pl/36x36" class="rounded-lg mr-3" />
+                <img src="https://fakeimg.pl/36x36" class="rounded-lg mr-3" />
                 <div class="-mt-1">
                   <div class="text-[15px] font-medium">Title</div>
                   <div class="text-gray-700 text-[13px] leading-none">Aliqua commodo magna id pariatur consectetur cupidatat.</div>
@@ -64,7 +64,7 @@
                 :key="indexPersonal"
                 class="p-2 flex items-start -ml-2 -mr-2 rounded-lg hover:bg-gray-200 cursor-pointer"
               >
-                <img src="http://fakeimg.pl/36x36" class="rounded-lg mr-3" />
+                <img src="https://fakeimg.pl/36x36" class="rounded-lg mr-3" />
                 <div class="-mt-1">
                   <div class="text-[15px] font-medium">Title</div>
                   <div class="text-gray-700 text-[13px] leading-none">Aliqua commodo magna id pariatur consectetur cupidatat.</div>
@@ -79,7 +79,7 @@
                 :key="indexPersonal"
                 class="p-2 flex items-start -ml-2 -mr-2 rounded-lg hover:bg-gray-200 cursor-pointer"
               >
-                <img src="http://fakeimg.pl/36x36" class="rounded-lg mr-3" />
+                <img src="https://fakeimg.pl/36x36" class="rounded-lg mr-3" />
                 <div class="-mt-1">
                   <div class="text-[15px] font-medium">Title</div>
                   <div class="text-gray-700 text-[13px] leading-none">Aliqua commodo magna id pariatur consectetur cupidatat.</div>
@@ -94,7 +94,7 @@
                 :key="indexProfessional"
                 class="p-2 flex items-start -ml-2 -mr-2 rounded-lg hover:bg-gray-200 cursor-pointer"
               >
-                <img src="http://fakeimg.pl/36x36" class="rounded-lg mr-3" />
+                <img src="https://fakeimg.pl/36x36" class="rounded-lg mr-3" />
                 <div class="-mt-1">
                   <div class="text-[15px] font-medium">Title</div>
                   <div class="text-gray-700 text-[13px] leading-none">Aliqua commodo magna id pariatur consectetur cupidatat.</div>
@@ -109,7 +109,7 @@
                 :key="indexCommunityResources"
                 class="p-2 flex items-start -ml-2 -mr-2 rounded-lg hover:bg-gray-200 cursor-pointer"
               >
-                <img src="http://fakeimg.pl/36x36" class="rounded-lg mr-3" />
+                <img src="https://fakeimg.pl/36x36" class="rounded-lg mr-3" />
                 <div class="-mt-1">
                   <div class="text-[15px] font-medium">Title</div>
                   <div class="text-gray-700 text-[13px] leading-none">Aliqua commodo magna id pariatur consectetur cupidatat.</div>
@@ -124,7 +124,7 @@
                 :key="indexMoreFromMeta"
                 class="p-2 flex items-start -ml-2 -mr-2 rounded-lg hover:bg-gray-200 cursor-pointer"
               >
-                <img src="http://fakeimg.pl/36x36" class="rounded-lg mr-3" />
+                <img src="https://fakeimg.pl/36x36" class="rounded-lg mr-3" />
                 <div class="-mt-1">
                   <div class="text-[15px] font-medium">Title</div>
                   <div class="text-gray-700 text-[13px] leading-none">Aliqua commodo magna id pariatur consectetur cupidatat.</div>
@@ -143,7 +143,7 @@
               class="p-2 flex items-center -ml-2 -mr-2 rounded-lg hover:bg-gray-200 cursor-pointer"
               :class="{ 'relative line-cut mb-4': indexCreate + 1 == 4 }"
             >
-              <img src="http://fakeimg.pl/36x36" class="rounded-full mr-3" />
+              <img src="https://fakeimg.pl/36x36" class="rounded-full mr-3" />
               <span class="text-[15px] font-medium capitalize">Title</span>
             </div>
           </div>

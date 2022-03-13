@@ -9,13 +9,17 @@
         </p>
       </div>
       <p class="text-[17px] text-gray-700 py-1">x,xxx friends</p>
-      <div class="friend-list">
-        <div v-for="i in 6" :key="i" class="xl:hidden friend-list-profile">
-          <img src="http://fakeimg.pl/480x480" class="rounded-lg border border-line" />
+
+      <div class="max-xl:!hidden friend-list">
+        <div v-for="(j, indexFriend) in 9" :key="indexFriend" class="friend-list-profile">
+          <img src="https://fakeimg.pl/480x480" class="rounded-lg border border-line" />
           <p class="text-[13px] font-semibold pt-1">Friend Name</p>
         </div>
-        <div v-for="i in 9" :key="i" class="max-xl:hidden friend-list-profile">
-          <img src="http://fakeimg.pl/480x480" class="rounded-lg border border-line" />
+      </div>
+
+      <div class="xl:!hidden friend-list">
+        <div v-for="(i, index) in 6" :key="index" class="friend-list-profile">
+          <img src="https://fakeimg.pl/480x480" class="rounded-lg border border-line" />
           <p class="text-[13px] font-semibold pt-1">Friend Name</p>
         </div>
         <div class="btn btn-all mt-3 xl:!hidden">See All Friends</div>
@@ -30,5 +34,4 @@ export default {
 }
 </script>
 
-<style>
-</style>
+<style></style>

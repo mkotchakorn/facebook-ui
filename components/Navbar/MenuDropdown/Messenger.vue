@@ -5,7 +5,7 @@
         <p class="px-4 pt-3 pb-1 -mx-4 capitalize text-2xl font-bold">{{ title }}</p>
         <div class="flex items-center pb-2">
           <template v-for="(i, indexIcon) in 4">
-            <img :key="indexIcon" src="http://fakeimg.pl/20x20" class="rounded-full mx-3" />
+            <img :key="indexIcon" src="https://fakeimg.pl/20x20" class="rounded-full mx-3" />
           </template>
         </div>
       </div>
@@ -15,7 +15,7 @@
           <font-awesome-icon icon="fa-solid fa-magnifying-glass" class="icon w-4 h-4" />
         </div>
         <div v-for="(i, indexChat) in 20" :key="indexChat" class="chat-list flex items-center -mx-2 p-2">
-          <img src='http://fakeimg.pl/56x56' class="rounded-full mr-3" />
+          <img src='https://fakeimg.pl/56x56' class="rounded-full mr-3" />
           <div>
             <div class="text-[15px]">John Doe</div>
             <div class="text-[13px] text-gray-700 flex items-center">
