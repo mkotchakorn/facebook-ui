@@ -4,6 +4,7 @@
     <div class="xxl:max-w-xxl mx-auto">
         <Nuxt />
     </div>
+    <ButtonNewMessage />
   </div>
 </template>
 

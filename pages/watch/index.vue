@@ -1,5 +1,5 @@
 <template>
-  <div>watch</div>
+  <div></div>
 </template>
 
 <script>

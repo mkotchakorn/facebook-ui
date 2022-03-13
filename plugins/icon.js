@@ -23,6 +23,7 @@ import {
   faUser,
   faCamera,
   faXmark,
+  faPenToSquare,
 } from '@fortawesome/free-solid-svg-icons'
 
 /* import font awesome icon component */
@@ -48,7 +49,8 @@ library.add(
   faUserGroup,
   faUser,
   faCamera,
-  faXmark
+  faXmark,
+  faPenToSquare
 )
 
 /* add font awesome icon component */
