@@ -1,0 +1,20 @@
+.sidebar-friend-list {
+  @apply sticky top-nav right-0 min-w-[280px] max-w-[360px] py-4 pl-2 text-dark;
+  height: calc(100vh - 56px);
+
+  &.overflow {
+    @screen xl {
+      @apply overflow-y-auto overflow-x-hidden;
+
+      &:hover {
+        &::-webkit-scrollbar-thumb {
+          @apply bg-scroll;
+        }
+      }
+    }
+  }
+
+  .menu-list {
+    @apply flex items-center p-2 rounded-lg hover:bg-gray-400;
+  }
+}

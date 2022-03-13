@@ -1,0 +1,28 @@
+.sidebar-community {
+  @apply sticky top-nav min-w-[280px] max-w-[360px] py-4 pl-2 text-dark;
+  height: calc(100vh - 56px);
+
+  &.overflow {
+    @screen xl {
+      @apply overflow-y-auto overflow-x-hidden;
+
+      &:hover {
+        &::-webkit-scrollbar-thumb {
+          @apply bg-scroll;
+        }
+      }
+    }
+  }
+
+  .menu-list {
+    @apply flex items-center p-2 rounded-lg cursor-pointer hover:bg-gray-400;
+  }
+
+  .shortcuts {
+    &:hover {
+      .edit-shortcuts {
+        @apply block;
+      }
+    }
+  }
+}

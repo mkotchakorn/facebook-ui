@@ -1,0 +1,11 @@
+.time-line-video-room {
+  @apply relative hidden xl:block text-dark;
+
+  .card {
+    @apply px-4 py-3 rounded-lg shadow bg-white mt-4 overflow-hidden;
+  }
+
+  .btn-next {
+    @apply absolute top-1/2 -translate-y-1/2 right-4 w-12 h-12 flex items-center justify-center rounded-full shadow cursor-pointer border border-gray-500 bg-white hover:bg-gray-200;
+  }
+}

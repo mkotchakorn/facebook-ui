@@ -6,7 +6,9 @@
     </div>
     <div v-if="search" v-click-outside="hideSearchPanel" class="nav-search-panel">
       <div class="flex items-center">
-        <font-awesome-icon icon="fa-solid fa-arrow-left-long" class="w-4 h-4 ml-1 mr-4 text-gray-700" />
+        <div @click="searchPanel">
+          <font-awesome-icon icon="fa-solid fa-arrow-left-long" class="w-4 h-4 ml-1 mr-4 text-gray-700" />
+        </div>
         <input type="text" class="form-control h-10 w-full pt-2 pb-3" placeholder="Search Facebook" autofocus />
       </div>
       <p class="text-[15px] text-center text-gray-600 py-4">No recent searches</p>

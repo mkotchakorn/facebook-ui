@@ -1,0 +1,27 @@
+.time-line-post {
+  @apply text-dark order-last;
+
+  .card {
+    @apply px-2 xl:px-4 pt-2 xl:pt-3 my-2 xl:my-4 xl:rounded-lg xl:shadow bg-white;
+
+    &-header {
+      @apply flex items-start;
+    }
+
+    &-body {
+      @apply mt-2 xl:mt-3;
+
+      .message {
+        @apply text-[15px];
+      }
+
+      .sum {
+        @apply py-[10px] border-b border-line;
+      }
+    }
+
+    &-footer {
+      @apply py-1 flex items-center;
+    }
+  }
+}

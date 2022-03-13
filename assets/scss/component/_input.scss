@@ -1,5 +1,5 @@
 .form-control {
-  @apply bg-form rounded-full placeholder:text-gray-700/70 focus:outline-none focus:placeholder:text-gray-700/50 px-4;
+  @apply bg-form rounded-full placeholder:text-gray-700/70 focus:outline-none focus:placeholder:text-gray-700/50 px-4 text-dark;
 }
 
 .from-control-icon {

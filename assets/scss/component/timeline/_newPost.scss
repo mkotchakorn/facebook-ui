@@ -1,0 +1,19 @@
+.time-line-new-post {
+  @apply order-first text-dark;
+
+  .card {
+    @apply p-2 xl:px-4 xl:py-3 xl:rounded-lg xl:shadow bg-white xl:mt-6;
+
+    &-body {
+      @apply flex items-center;
+
+      .form-control {
+        @apply w-full h-8 xl:h-10 placeholder:text-gray-700 border border-line xl:border-0 cursor-pointer;
+      }
+    }
+
+    &-footer {
+      @apply border-t border-line mt-3 pt-2;
+    }
+  }
+}

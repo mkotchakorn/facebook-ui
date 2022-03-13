@@ -1,0 +1,62 @@
+.time-line-story {
+  @apply bg-white px-1 mt-2 xl:mt-1 order-1 text-dark;
+
+  @screen xl {
+    @apply mt-5 bg-transparent px-0;
+  }
+
+  &-list {
+    @apply flex items-center flex-nowrap -mx-1 overflow-auto xl:overflow-hidden;
+
+    .my-story,
+    .friend-story {
+      @apply px-1 relative flex my-1;
+      max-width: 22%;
+      flex: 0 0 22%;
+      max-height: 198px;
+
+      @screen xl {
+        max-width: 20%;
+        flex: 0 0 20%;
+      }
+
+      &.bg-backdrop {
+        @apply relative before:absolute before:inset-0 before:mx-1 before:rounded-lg;
+
+        &::before {
+          background: linear-gradient(0deg, rgba(0, 0, 0, 0.3) 0%, rgba(255, 255, 255, 0) 100%);
+        }
+      }
+
+      .caption {
+        @apply text-[10px] xl:text-[13px] absolute left-2 bottom-1 xl:left-3 xl:bottom-3 leading-[10px] text-white;
+      }
+    }
+
+    .my-story {
+      .create-story {
+        .plus {
+          @apply text-primary bg-white absolute w-8 h-8 top-2 left-2 text-2xl leading-[28px] px-2 rounded-full;
+        }
+
+        @screen xl {
+          @apply absolute inset-x-1 bottom-0 h-[49px] bg-white rounded-b-lg;
+
+          .plus {
+            @apply rounded-full w-10 h-10 bg-primary border-4 border-white flex items-center justify-center text-[32px] text-white pb-[7px] absolute -top-5 left-1/2 -translate-x-1/2;
+          }
+        }
+      }
+    }
+
+    .friend-story {
+      .profile {
+        @apply absolute top-2 left-2 xl:top-3 xl:left-3;
+      }
+    }
+  }
+
+  .btn-next {
+    @apply absolute -right-5 items-center justify-center shadow border border-gray-500 hover:bg-gray-200;
+  }
+}

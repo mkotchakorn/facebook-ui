@@ -45,15 +45,7 @@
       <p class="text-[15px] font-semibold ml-3">Title</p>
     </div>
 
-    <div class="pt-1 pb-1 px-2 text-gray-700 text-[13px] leading-snug">
-      <span>Privacy</span>
-      <span>· Terms</span>
-      <span>· Advertising</span>
-      <span>· Ad choices<span class="h-3 w-3 bg-gray-500 inline-block rounded-full align-middle"></span></span>
-      <span>· Cookies</span>
-      <span>· More</span>
-      <span>· Meta © 2022</span>
-    </div>
+    <Footer class="pt-1 pb-1 px-2" />
   </div>
 </template>
 

@@ -18,9 +18,11 @@ import {
   faEllipsis,
   faChevronRight,
   faArrowLeftLong,
+  faArrowRightLong,
   faUserGroup,
   faUser,
   faCamera,
+  faXmark,
 } from '@fortawesome/free-solid-svg-icons'
 
 /* import font awesome icon component */
@@ -42,9 +44,11 @@ library.add(
   faEllipsis,
   faChevronRight,
   faArrowLeftLong,
+  faArrowRightLong,
   faUserGroup,
   faUser,
-  faCamera
+  faCamera,
+  faXmark
 )
 
 /* add font awesome icon component */

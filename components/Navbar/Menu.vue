@@ -61,7 +61,8 @@ export default {
   },
   methods: {
     expandMenu(key) {
-      this.activeMenu = key
+      if (this.activeMenu === key) this.activeMenu = ''
+      else this.activeMenu = key
     },
     hideMenu() {
       this.activeMenu = ''

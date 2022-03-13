@@ -1,6 +1,6 @@
 .nav {
   &-community {
-    @apply flex items-center justify-center z-50 shadow-[0_0_5px_0_rgba(0,0,0,0.2)];
+    @apply flex items-center justify-center z-50 shadow-[0_0_5px_0_rgba(0,0,0,0.2)] bg-white border-b border-line xl:border-0;
 
     @screen max-xs {
       @apply overflow-x-auto;
