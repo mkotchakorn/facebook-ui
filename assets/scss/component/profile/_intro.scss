@@ -1,0 +1,18 @@
+.profile-intro {
+  .bio-list {
+    @apply max-xl:pb-3 max-xl:border-b max-xl:border-line;
+  }
+
+  .btn {
+    @apply rounded-md px-3 h-9 flex items-center justify-center text-[15px] font-semibold;
+  }
+
+  .btn-edit,
+  .btn-edit-profile {
+    @apply bg-gray-400 hover:bg-gray-500;
+  }
+
+  .btn-edit-public {
+    @apply text-primary bg-blue-100 mt-5;
+  }
+}

@@ -1,0 +1,18 @@
+.profile-friend {
+  .friend-list {
+    @apply flex flex-wrap -mx-2 max-xl:pb-4 max-xl:border-b max-xl:border-line;
+
+    &-profile {
+      @apply px-2 my-2 max-w-[33.33%];
+      flex: 0 0 33%;
+    }
+
+    .btn {
+      @apply rounded-md px-3 h-9 flex items-center justify-center text-[15px] font-semibold;
+    }
+
+    .btn-all {
+      @apply bg-gray-400 hover:bg-gray-500 w-full;
+    }
+  }
+}

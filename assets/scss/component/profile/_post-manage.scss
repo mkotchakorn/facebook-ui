@@ -1,0 +1,21 @@
+.profile-post-manage {
+  .btn {
+    @apply rounded-md px-3 h-9 flex items-center justify-center text-[15px] font-semibold;
+  }
+
+  .btn-solid-gray {
+    @apply bg-gray-400 hover:bg-gray-500;
+  }
+
+  .grid-view {
+    @apply relative w-1/2 h-full flex items-center justify-center text-[15px] font-semibold rounded-lg hover:bg-gray-200;
+
+    &.active {
+      @apply text-primary rounded-none bg-white before:absolute before:-bottom-1 before:w-full before:h-[3px] before:bg-primary;
+    }
+
+    &-list {
+      @apply h-10 flex items-center justify-between py-1;
+    }
+  }
+}

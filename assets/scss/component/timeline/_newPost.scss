@@ -16,4 +16,32 @@
       @apply border-t border-line mt-3 pt-2;
     }
   }
+
+  &.profile-page {
+    .card {
+      @apply mt-0 max-xl:pb-2;
+
+      &-title {
+        @apply max-xl:mb-4;
+
+        p {
+          @apply max-xl:block leading-3;
+        }
+      }
+
+      &-footer {
+        @screen max-xl {
+          @apply block border-0 p-0;
+
+          .menu-item {
+            @apply rounded-none py-0;
+
+            &:not(:first-child) {
+              @apply border-l border-line;
+            }
+          }
+        }
+      }
+    }
+  }
 }

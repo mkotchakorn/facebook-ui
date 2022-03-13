@@ -7,9 +7,14 @@
 @import './component/navbar/navbar';
 @import './component/sidebar/sidebar';
 @import './component//timeline/timeline';
+@import './component/profile/profile';
 @import './component/input';
 
 // scroll
+* {
+  scroll-behavior: smooth;
+}
+
 .overflow::-webkit-scrollbar {
   width: 8px;
 }

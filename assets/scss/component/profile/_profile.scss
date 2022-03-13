@@ -1,0 +1,30 @@
+@import './banner';
+@import './my-profile';
+@import './intro';
+@import './friend';
+@import './photo';
+@import './event';
+@import './post-manage';
+
+.panel {
+  @apply relative max-w-[940px] mx-auto xl:px-8 text-dark;
+
+  .card {
+    @apply p-4 bg-white xl:rounded-lg xl:shadow;
+  }
+
+  .row {
+    @screen xl {
+      @apply flex -mx-2;
+
+      .card {
+        &-left {
+          @apply px-2 w-full max-w-[376px];
+        }
+        &-right {
+          @apply px-2 w-full max-w-[518px];
+        }
+      }
+    }
+  }
+}

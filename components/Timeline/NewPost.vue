@@ -1,6 +1,9 @@
 <template>
   <div class="time-line-new-post">
     <div class="card">
+      <div class="card-title">
+        <p class="hidden text-xl font-bold">Posts</p>
+      </div>
       <div class="card-body">
         <img src="http://fakeimg.pl/40x40" class="rounded-full mr-2 xl:mr-3" />
         <input type="text" class="form-control !bg-transparent xl:!bg-gray-100 xl:hover:!bg-gray-400" placeholder="What's on your mind?" @click="toggleNewPost" />
@@ -10,8 +13,8 @@
         </div>
       </div>
       <div class="card-footer hidden xl:block">
-        <div class="flex items-center">
-          <div v-for="(i, index) in 3" :key="index" class="flex items-center justify-center flex-grow p-2 hover:bg-gray-200 rounded-lg cursor-pointer">
+        <div class="menu-list flex items-center">
+          <div v-for="(i, index) in 3" :key="index" class="menu-item flex items-center justify-center flex-grow p-2 hover:bg-gray-200 rounded-lg cursor-pointer">
             <img src="http://fakeimg.pl/24x24" class="rounded-full mr-2" />
             <p class="text-[15px] font-semibold text-gray-700">Menu</p>
           </div>

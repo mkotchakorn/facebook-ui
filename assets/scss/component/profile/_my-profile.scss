@@ -1,0 +1,53 @@
+.profile-my-profile {
+  @apply bg-white xl:border-b xl:border-line text-dark;
+
+  &-wrap {
+    @apply relative max-w-[940px] mx-auto z-10 px-4 xl:px-8 -top-[63px] xl:-top-9 -mb-[63px] xl:-mb-9;
+
+    .menu-profile {
+      .profile-img {
+        .img {
+          @apply border-4 border-white;
+
+          @screen max-xl {
+            @apply w-[126px] h-[126px] mx-auto;
+          }
+        }
+      }
+
+      .action {
+        @apply flex items-center;
+
+        .btn {
+          @apply rounded-md px-3 h-9 flex items-center justify-center text-[15px] font-semibold;
+        }
+        .btn-story {
+          @apply bg-primary hover:bg-blue-900 text-white;
+        }
+        .btn-edit-profile {
+          @apply bg-primary hover:bg-blue-900 max-xl:text-white xl:bg-gray-400 xl:hover:bg-gray-500 xl:ml-2;
+        }
+      }
+    }
+
+    .menu-tab {
+      @apply border-t border-line h-[60px] items-center;
+
+      .menu {
+        @apply rounded-lg text-[15px] font-semibold text-gray-700 px-4 flex items-center justify-center h-[50px] hover:bg-gray-200;
+
+        &.active {
+          @apply border-primary text-primary bg-white relative before:absolute before:h-1 before:-bottom-1 before:w-full before:bg-primary;
+        }
+      }
+
+      &.affix {
+        @apply fixed top-nav bg-white left-0 right-0 shadow;
+
+        .menu-tab-profile {
+          @apply relative w-full max-w-[940px] mx-auto px-8 flex items-center justify-between;
+        }
+      }
+    }
+  }
+}

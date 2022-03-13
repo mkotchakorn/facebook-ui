@@ -1,0 +1,15 @@
+.profile-event {
+  @apply max-xl:hidden;
+
+  .truncate {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+
+    &-3 {
+      -webkit-line-clamp: 3;
+    }
+  }
+}

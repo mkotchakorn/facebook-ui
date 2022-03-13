@@ -24,4 +24,10 @@
       @apply py-1 flex items-center;
     }
   }
+
+  &.profile-page {
+    .card {
+      @apply pb-0;
+    }
+  }
 }

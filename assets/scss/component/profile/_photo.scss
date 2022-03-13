@@ -1,0 +1,33 @@
+.profile-photo {
+  @apply max-xl:hidden;
+
+  .photo-list {
+    @apply flex flex-wrap -mx-[2px] max-xl:pb-4 max-xl:border-b max-xl:border-line;
+
+    &-profile {
+      @apply px-[2px] my-[2px] max-w-[33.33%];
+      flex: 0 0 33%;
+
+      &:nth-child(1) {
+        img {
+          @apply rounded-tl-lg;
+        }
+      }
+      &:nth-child(3) {
+        img {
+          @apply rounded-tr-lg;
+        }
+      }
+      &:nth-child(7) {
+        img {
+          @apply rounded-bl-lg;
+        }
+      }
+      &:nth-child(9) {
+        img {
+          @apply rounded-br-lg;
+        }
+      }
+    }
+  }
+}

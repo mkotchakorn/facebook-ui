@@ -1,6 +1,6 @@
 <template>
   <div class="nav-search">
-    <div class="nav-search-index from-control-icon w-[240px]" @click="searchPanel">
+    <div class="nav-search-index from-control-icon w-[280px]" @click="searchPanel">
       <input type="text" class="form-control h-10 w-full pt-2 pb-3" placeholder="Search Facebook" />
       <font-awesome-icon icon="fa-solid fa-magnifying-glass" class="icon w-4 h-4" />
     </div>

@@ -347,6 +347,26 @@
 .time-line-new-post .card-footer {
   @apply border-t border-line mt-3 pt-2;
 }
+.time-line-new-post.profile-page .card {
+  @apply mt-0 max-xl:pb-2;
+}
+.time-line-new-post.profile-page .card-title {
+  @apply max-xl:mb-4;
+}
+.time-line-new-post.profile-page .card-title p {
+  @apply max-xl:block leading-3;
+}
+@screen max-xl {
+  .time-line-new-post.profile-page .card-footer {
+    @apply block border-0 p-0;
+  }
+  .time-line-new-post.profile-page .card-footer .menu-item {
+    @apply rounded-none py-0;
+  }
+  .time-line-new-post.profile-page .card-footer .menu-item:not(:first-child) {
+    @apply border-l border-line;
+  }
+}
 
 .time-line-video-room {
   @apply relative hidden xl:block text-dark;
@@ -378,6 +398,9 @@
 }
 .time-line-post .card-footer {
   @apply py-1 flex items-center;
+}
+.time-line-post.profile-page .card {
+  @apply pb-0;
 }
 
 .time-line-create-post {
@@ -445,6 +468,172 @@
   }
 }
 
+.profile-banner {
+  @apply relative px-4 pt-4 xl:p-0 bg-white;
+}
+@screen xl {
+  .profile-banner {
+    @apply before:absolute before:inset-0 before:bg-[#ccc] before:z-0 after:absolute after:inset-0 after:z-0;
+  }
+  .profile-banner::after {
+    background: linear-gradient(to top, #ffffff, white, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0));
+  }
+}
+.profile-banner-wrap {
+  @apply relative max-w-[940px] mx-auto z-10;
+}
+.profile-banner-wrap .ratio {
+  @apply relative;
+  padding-top: 37.037%;
+}
+.profile-banner-wrap .ratio img {
+  @apply absolute inset-0 w-full h-full object-cover rounded-t-2xl xl:rounded-t-none xl:rounded-b-lg;
+}
+.profile-banner-wrap .btn-edit-canner {
+  @apply xl:h-9 flex items-center justify-center p-1 xl:py-0 xl:px-3 rounded-md xl:rounded-lg bg-gray-400 xl:bg-white hover:bg-gray-200 w-max absolute right-1 bottom-1 xl:right-7 xl:bottom-4;
+}
+
+.profile-my-profile {
+  @apply bg-white xl:border-b xl:border-line text-dark;
+}
+.profile-my-profile-wrap {
+  @apply relative max-w-[940px] mx-auto z-10 px-4 xl:px-8 -top-[63px] xl:-top-9 -mb-[63px] xl:-mb-9;
+}
+.profile-my-profile-wrap .menu-profile .profile-img .img {
+  @apply border-4 border-white;
+}
+@screen max-xl {
+  .profile-my-profile-wrap .menu-profile .profile-img .img {
+    @apply w-[126px] h-[126px] mx-auto;
+  }
+}
+.profile-my-profile-wrap .menu-profile .action {
+  @apply flex items-center;
+}
+.profile-my-profile-wrap .menu-profile .action .btn {
+  @apply rounded-md px-3 h-9 flex items-center justify-center text-[15px] font-semibold;
+}
+.profile-my-profile-wrap .menu-profile .action .btn-story {
+  @apply bg-primary hover:bg-blue-900 text-white;
+}
+.profile-my-profile-wrap .menu-profile .action .btn-edit-profile {
+  @apply bg-primary hover:bg-blue-900 max-xl:text-white xl:bg-gray-400 xl:hover:bg-gray-500 xl:ml-2;
+}
+.profile-my-profile-wrap .menu-tab {
+  @apply border-t border-line h-[60px] items-center;
+}
+.profile-my-profile-wrap .menu-tab .menu {
+  @apply rounded-lg text-[15px] font-semibold text-gray-700 px-4 flex items-center justify-center h-[50px] hover:bg-gray-200;
+}
+.profile-my-profile-wrap .menu-tab .menu.active {
+  @apply border-primary text-primary bg-white relative before:absolute before:h-1 before:-bottom-1 before:w-full before:bg-primary;
+}
+.profile-my-profile-wrap .menu-tab.affix {
+  @apply fixed top-nav bg-white left-0 right-0 shadow;
+}
+.profile-my-profile-wrap .menu-tab.affix .menu-tab-profile {
+  @apply relative w-full max-w-[940px] mx-auto px-8 flex items-center justify-between;
+}
+
+.profile-intro .bio-list {
+  @apply max-xl:pb-3 max-xl:border-b max-xl:border-line;
+}
+.profile-intro .btn {
+  @apply rounded-md px-3 h-9 flex items-center justify-center text-[15px] font-semibold;
+}
+.profile-intro .btn-edit,
+.profile-intro .btn-edit-profile {
+  @apply bg-gray-400 hover:bg-gray-500;
+}
+.profile-intro .btn-edit-public {
+  @apply text-primary bg-blue-100 mt-5;
+}
+
+.profile-friend .friend-list {
+  @apply flex flex-wrap -mx-2 max-xl:pb-4 max-xl:border-b max-xl:border-line;
+}
+.profile-friend .friend-list-profile {
+  @apply px-2 my-2 max-w-[33.33%];
+  flex: 0 0 33%;
+}
+.profile-friend .friend-list .btn {
+  @apply rounded-md px-3 h-9 flex items-center justify-center text-[15px] font-semibold;
+}
+.profile-friend .friend-list .btn-all {
+  @apply bg-gray-400 hover:bg-gray-500 w-full;
+}
+
+.profile-photo {
+  @apply max-xl:hidden;
+}
+.profile-photo .photo-list {
+  @apply flex flex-wrap -mx-[2px] max-xl:pb-4 max-xl:border-b max-xl:border-line;
+}
+.profile-photo .photo-list-profile {
+  @apply px-[2px] my-[2px] max-w-[33.33%];
+  flex: 0 0 33%;
+}
+.profile-photo .photo-list-profile:nth-child(1) img {
+  @apply rounded-tl-lg;
+}
+.profile-photo .photo-list-profile:nth-child(3) img {
+  @apply rounded-tr-lg;
+}
+.profile-photo .photo-list-profile:nth-child(7) img {
+  @apply rounded-bl-lg;
+}
+.profile-photo .photo-list-profile:nth-child(9) img {
+  @apply rounded-br-lg;
+}
+
+.profile-event {
+  @apply max-xl:hidden;
+}
+.profile-event .truncate {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: normal;
+}
+.profile-event .truncate-3 {
+  -webkit-line-clamp: 3;
+}
+
+.profile-post-manage .btn {
+  @apply rounded-md px-3 h-9 flex items-center justify-center text-[15px] font-semibold;
+}
+.profile-post-manage .btn-solid-gray {
+  @apply bg-gray-400 hover:bg-gray-500;
+}
+.profile-post-manage .grid-view {
+  @apply relative w-1/2 h-full flex items-center justify-center text-[15px] font-semibold rounded-lg hover:bg-gray-200;
+}
+.profile-post-manage .grid-view.active {
+  @apply text-primary rounded-none bg-white before:absolute before:-bottom-1 before:w-full before:h-[3px] before:bg-primary;
+}
+.profile-post-manage .grid-view-list {
+  @apply h-10 flex items-center justify-between py-1;
+}
+
+.panel {
+  @apply relative max-w-[940px] mx-auto xl:px-8 text-dark;
+}
+.panel .card {
+  @apply p-4 bg-white xl:rounded-lg xl:shadow;
+}
+@screen xl {
+  .panel .row {
+    @apply flex -mx-2;
+  }
+  .panel .row .card-left {
+    @apply px-2 w-full max-w-[376px];
+  }
+  .panel .row .card-right {
+    @apply px-2 w-full max-w-[518px];
+  }
+}
+
 .form-control {
   @apply bg-form rounded-full placeholder:text-gray-700/70 focus:outline-none focus:placeholder:text-gray-700/50 px-4 text-dark;
 }
@@ -457,6 +646,10 @@
 }
 .from-control-icon .icon {
   @apply absolute top-1/2 -translate-y-1/2 left-[10px] text-gray-700/60;
+}
+
+* {
+  scroll-behavior: smooth;
 }
 
 .overflow::-webkit-scrollbar {
